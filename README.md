@@ -1,6 +1,5 @@
 # Solana Simple Lottery
 
-## About This Repo
 
 This **Simple Lottery Game** is built using the Anchor framework on Solana and includes a modern frontend powered by **Next.js**, **TypeScript**, and **Tailwind CSS**. Users can buy lottery tickets by selecting a number between 1 and 75. Once all 25 tickets are sold, the program randomly selects a winner, who can then claim their prize.
 
@@ -14,7 +13,10 @@ Note: "randomly": With a pseudo-random method that creates a seed using a combin
 - **Reward Claim**: The winner can claim their prize (2.5 SOL) by proving ticket ownership.
 - **SOL/Lamport Transfers**: Demonstrates Solana's system program for transferring SOL and manual Lamport manipulation.
 
-Live Demo [here](https://solana-s6-lottery.vercel.app/).
+### Demo
+
+- **Live Demo**: [here](https://solana-s6-lottery.vercel.app/)
+- **Example images**: [here](.doc/images/)
 
 
 ### Folders Structure
