@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 use crate::errors::ErrorCode;
-use crate::states::*;
+use crate::state::game::*;
 use crate::utils::transfer_sol;
 
 pub fn claim_reward(ctx: Context<ClaimReward>, ticket_number: u8) -> Result<()> {

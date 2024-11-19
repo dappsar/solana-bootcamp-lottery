@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 
 use crate::errors::ErrorCode;
 use crate::instructions::reset_tickets;
-use crate::states::*;
+use crate::state::game::*;
 
 pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
     let bingo_account = &mut ctx.accounts.bingo_account;

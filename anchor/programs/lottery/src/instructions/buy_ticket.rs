@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 
 use crate::errors::ErrorCode;
 use crate::instructions::reset_tickets;
-use crate::states::*;
+use crate::state::game::*;
 use crate::utils::transfer_sol;
 
 pub fn buy_ticket(ctx: Context<BuyTicket>, chosen_number: u8) -> Result<()> {

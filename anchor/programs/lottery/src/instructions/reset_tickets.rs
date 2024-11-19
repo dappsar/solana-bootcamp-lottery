@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-use crate::states::*;
+use crate::state::game::*;
 
 pub fn reset_tickets(user_key: Pubkey, bingo_account: &mut Account<BingoAccount>) -> Result<()> {
     let numbers = generate_shuffled_numbers(user_key)?;

@@ -4,7 +4,7 @@ use crate::instructions::*;
 
 pub mod errors;
 pub mod instructions;
-pub mod states;
+pub mod state;
 pub mod utils;
 
 declare_id!("Hve87o7ETbTkEXBhnJ6VYZ7d4kBdHhfbZ2PLAYKbZ8Ta");
