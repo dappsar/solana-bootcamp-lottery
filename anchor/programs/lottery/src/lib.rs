@@ -4,10 +4,10 @@ use crate::instructions::*;
 
 pub mod errors;
 pub mod instructions;
-pub mod states;
+pub mod state;
 pub mod utils;
 
-declare_id!("Hve87o7ETbTkEXBhnJ6VYZ7d4kBdHhfbZ2PLAYKbZ8Ta");
+declare_id!("Cir3otRBVbM5UPikSJM5mGrFP44hWyvuG1cr7dzQggvW");
 
 #[program]
 pub mod lottery {
