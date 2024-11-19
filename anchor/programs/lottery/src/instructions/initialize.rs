@@ -23,8 +23,7 @@ pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
 pub struct Initialize<'info> {
     #[account(
         init_if_needed,
-        seeds = [b"bingo_account"],
-        // seeds = [BINGO_ACCOUNT_SEED.as_bytes(), user.key().as_ref()],
+        seeds = [BINGO_ACCOUNT_SEED.as_bytes()],
         bump,
         payer = user,
         space = 8 + BingoAccount::INIT_SPACE
@@ -33,8 +32,7 @@ pub struct Initialize<'info> {
 
     #[account(
         init_if_needed,
-        seeds = [b"winners_account"],
-        // seeds = [WINNERS_SEED.as_bytes(), user.key().as_ref()],
+        seeds = [WINNERS_SEED.as_bytes()],
         bump,
         payer = user,
         space = 8 + Winners::INIT_SPACE
