@@ -75,7 +75,7 @@ npm run dev
 If you use Phantom wallet, you have to enable testnet mode. You could get detailed info [here](https://docs.phantom.app/developer-powertools/testnet-mode).
 
 
-## Install in localnet
+## Deploy to localnet
 
 ### Build the program
 
@@ -149,7 +149,7 @@ Sometimes, when using Phantom, the wallet may not be properly set to the correct
 Again, if you switch between localnet and devnet without refreshing the site, you might encounter this error. Try pressing `Ctrl+F5` to refresh the browser.
 
 
-## Install in Devnet
+## Deploy to Devnet
 
 The same steps as mentioned above, but change the cluster to devnet.
 
@@ -164,3 +164,24 @@ Additionally, after deployment, you need to update the program address in this f
 
 
 Remember that to use on devnet, you will need funds in your wallet. You can use [the official Solana faucet](https://faucet.solana.com/).
+
+## Build web 
+
+To build the site, simply run (from project root folder):
+
+```shell
+npm run build
+```
+
+If you encounter the following error:
+  _Cannot read properties of null (reading 'message')_ 
+  
+try running:
+
+```shell
+nx reset
+```
+
+nx reset clears the local cache and removes any corrupted or outdated state that Nx may have stored. This is particularly useful when encountering unexpected errors related to task scheduling, dependency graph computation, or workspace configurations. Running this command ensures a clean environment, allowing Nx to rebuild its cache and dependency information from scratch.
+
+
