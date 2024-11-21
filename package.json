@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "anchor": "nx run anchor:anchor",
-    "anchor-build": "nx run anchor:anchor build",
+    "anchor-build": "nx run anchor:anchor build --skip-nx-cache",
     "anchor-localnet": "nx run anchor:anchor localnet",
-    "anchor-test": "nx run anchor:anchor test",
+    "anchor-test": "nx run anchor:anchor test --skip-nx-cache",
     "dev": "nx reset; nx serve web",
     "build": "nx build web",
     "start": "next start",
