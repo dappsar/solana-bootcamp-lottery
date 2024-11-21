@@ -10,7 +10,7 @@
     "dev": "nx reset; nx serve web",
     "build": "nx build web",
     "start": "next start",
-    "lint": "nx lint web --fix"
+    "lint": "nx lint web"
   },
   "private": true,
   "dependencies": {
