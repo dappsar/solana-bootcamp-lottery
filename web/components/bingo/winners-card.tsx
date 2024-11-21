@@ -61,7 +61,7 @@ const WinnersCard: React.FC<WinnersCardProps> = ({ keys }) => {
 const ClaimPrizeButton: React.FC<{ winner: Tickets }> = ({ winner }) => {
 
   const { claimPrize, accountQuery } = useLotteryProgramAccount({
-    //@ts-ignore
+    //@ts-expect-error linter ignored
     account: winner.user,
   })
   const { winners } = useLotteryProgram()
@@ -70,7 +70,7 @@ const ClaimPrizeButton: React.FC<{ winner: Tickets }> = ({ winner }) => {
     try {
 
       await claimPrize.mutateAsync({
-        //@ts-ignore
+        //@ts-expect-error linter ignored
         user: winner.user,
         ticket_number: winner.number,
       })

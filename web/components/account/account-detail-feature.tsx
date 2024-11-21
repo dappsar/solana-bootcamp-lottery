@@ -10,8 +10,8 @@ import { AppHero, ellipsify } from '../ui/ui-layout'
 import {
   AccountBalance,
   AccountButtons,
-  AccountTokens,
-  AccountTransactions,
+  // AccountTokens,
+  // AccountTransactions,
 } from './account-ui'
 
 export default function AccountDetailFeature() {
@@ -43,14 +43,17 @@ export default function AccountDetailFeature() {
           </div>
         }
       >
+ 
         <div className="my-4">
           <AccountButtons address={address} />
         </div>
       </AppHero>
+      {/* 
       <div className="space-y-8">
         <AccountTokens address={address} />
         <AccountTransactions address={address} />
       </div>
-    </div>
+      */}
+      </div>
   )
 }
